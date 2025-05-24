@@ -8,6 +8,10 @@ import { useMediaQuery } from "react-responsive";
 import { calculateSizes } from "../constant";
 import Target from "../components/Target";
 import ReactLogo from "../components/ReactLogo";
+import Cube from "../components/Cube";
+import Rings from "../components/Rings";
+import HeroCamera from "../components/HeroCamera";
+import Button from "../components/Button";
 
 const Hero = () => {
 
@@ -60,7 +64,7 @@ const Hero = () => {
 
     return (
         <section className="min-h-screen w-full flex flex-col relative">
-            <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
+            <div className="w-full mx-auto flex flex-col sm:mt-36 mt-10 c-space gap-3">
                 <p className="sm:text-3xl text-xl font-medium text-white text-center font-generalsans">
                     Hi, I am Bipul <span className="waving-hand">👋🏽</span>
                 </p>
@@ -79,17 +83,20 @@ const Hero = () => {
                         <PerspectiveCamera makeDefault 
                             position={[0, 0, 30]}
                         />
-                        <HackerRoom 
-                            
-                            position={sizes.deskPosition}
-                            scale={sizes.deskScale}
-                            rotation={[0.2, -Math.PI, 0]}
-                            
-                        />
-
+                        <HeroCamera isMobile={isMobile}>
+                            <HackerRoom 
+                                
+                                position={sizes.deskPosition}
+                                scale={sizes.deskScale}
+                                rotation={[0.2, -Math.PI, 0]}
+                                
+                            />
+                        </HeroCamera>
                         <group>
                             <Target position={sizes.targetPosition} />
                             <ReactLogo position={sizes.reactLogoPosition} />
+                            <Cube position={sizes.cubePosition} />
+                            <Rings position={sizes.ringPosition} />
                         </group>
                         
                         <ambientLight intensity={1} />
@@ -97,6 +104,14 @@ const Hero = () => {
                     </Suspense>
                     
                 </Canvas>
+            </div>
+
+            <div className="absolute -bottom-10 left-0 right-0 mx-auto w-4/5 z-10">
+                <a href="#contact" position="w-fit" >
+                    <Button name="Let's Work Together" isBeam 
+                        containerClass="sm:w-fit w-full sm:min-w-96" 
+                    />
+                </a>
             </div>
         </section>
     )
