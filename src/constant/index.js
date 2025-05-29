@@ -58,12 +58,12 @@ export const navLinks = [
   
   export const myProjects = [
     {
-      title: 'Podcastr - AI Podcast Platform',
+      title: 'Netflix GPT',
       desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.',
       subdesc:
         'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
-      href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
-      texture: '/textures/project/project1.mp4',
+      href: 'https://bipul-netflix-spa.web.app/',
+      texture: '/textures/project/NetflixGPT.mp4',
       logo: '/assets/project-logo1.png',
       logoStyle: {
         backgroundColor: '#2A1816',
@@ -84,13 +84,13 @@ export const navLinks = [
         },
         {
           id: 3,
-          name: 'TypeScript',
-          path: '/assets/typescript.png',
+          name: 'JavaScript',
+          path: 'assets/javascript.png',
         },
         {
           id: 4,
           name: 'Framer Motion',
-          path: '/assets/framer.png',
+          path: 'assets/redux.png',
         },
       ],
     },
@@ -99,7 +99,7 @@ export const navLinks = [
       desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
       subdesc:
         'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
-      href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
+      href: 'https://www.youtube.com',
       texture: '/textures/project/project2.mp4',
       logo: '/assets/project-logo2.png',
       logoStyle: {
@@ -254,7 +254,7 @@ export const navLinks = [
       deskPosition: isMobile ? [0.5, -4.5, 0] : [0.25, -6.5, 0],
       cubePosition: isSmall ? [4, -5, 0] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [9, -5.5, 0],
       reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [12, 3, 0],
-      ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-10, 10, 0] : isTablet ? [-12, 10, 0] : [-52, 17, 0],
+      ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-10, 10, 0] : isTablet ? [-12, 10, 0] : [-30, 8, 0, ],
       targetPosition: isSmall ? [-5, -10, -10] : isMobile ? [-9, -10, -10] : isTablet ? [-11, -7, -10] : [-13, -13, -10],
     };
   };
@@ -263,29 +263,29 @@ export const navLinks = [
   export const workExperiences = [
     {
       id: 1,
-      name: 'Framer',
-      pos: 'Lead Web Developer',
-      duration: '2022 - Present',
-      title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-      icon: '/assets/framer.svg',
+      name: 'Accenture',
+      pos: 'Web Developer',
+      duration: '2025 - Present',
+      title: "I am responsbile for building beautiful, clean UI and writing scalable code. My responsibilites also include collaborating internally and with client to understand Business requirement and provide solutions.",
+      icon: '/assets/Accenture.jpeg',
       animation: 'victory',
     },
     {
       id: 2,
-      name: 'Figma',
-      pos: 'Web Developer',
-      duration: '2020 - 2022',
-      title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-      icon: '/assets/figma.svg',
+      name: 'Accenture',
+      pos: 'Desktop Support',
+      duration: '2021 - 2025',
+      title: "I was majorly working on the Infra side here, I was responsible for providing a robust and clean solutions using Cloud tools and technologies.",
+      icon: '/assets/Accenture.jpeg',
       animation: 'clapping',
     },
     {
       id: 3,
-      name: 'Notion',
-      pos: 'Junior Web Developer',
-      duration: '2019 - 2020',
-      title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-      icon: '/assets/notion.svg',
+      name: 'Ed StartUp',
+      pos: 'Junior Web Developer / Marketing',
+      duration: '2018 - 2020',
+      title: "In my college days, I was a part of a startup where my responsibilites included working on the developemt and marketing teams to improve user experience and attract new users",
+      icon: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAoAMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAAAAQIDB//EACcQAAIBAwQBBQADAQAAAAAAAAABESExQVFhcYECEiKRofBi4fEy/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDxv/miIjS2HuegRFDuX24EaiEAUZK0m7uNCcAAuWUjZANxQzD/ADgeMOkfZqke24GHTPj0TNS1yiP5ATuxJVOhHcBUsqKkjZGWBW54EED6AWIUjA600+y3MwPVFALQbYIk2I7AuBZkVC10AOoFcKSAVozCnTgs6im4BN5DnA7JTfoA21XILCMtbgLlsPSx6XcA6kqrCIDAjnJDRJWjA6SJTpEBNEfloBoN7hOVYnl2Ao63HbXZEk9StLQA63lihK6EkCytJI1wVKKk+AEbkTjIdbsQsAal6D1MiIAbf+hNim5YWGBGyySIACSJLKRUg04hx8gdBCV8iABG2sSiS3iDTuSQBMCE65FXdUAkFgkfyFNwLJL6EKmBUuCNBBtARoQVSVgSfHce0WuJWgCmCFAEmBWKFaM1A6uhEZ8XF1JqaWAs6/SJQlXgsapgSNp7DlF6I3IEDTBOUkBYHpIWFE0AGTUvJJ2ASKgXApLdhUKA4FtCCXSgFmBK2+BD6JZ2A0wEi1ANx/RPdl/BqYM1wgI2+SGobwyNQApF0OakkICtkSTdRAAsIQQTgAAKAApJPZXz0ApO46BJARo4BaBQBpsJyRLr7NJASwXlFp6ReURrRAG5M4LTJHGkgFGhWiBASSzGJAuBG27qC9McOCPd/YDovt54CTumAEghqaAZBaElZAsbpAyowXIHRMrgw3+YlgV1yyNxZyT7HQEZdnUbBeMYAAoAgaLEEYEXJfUiQJASUYIwEgAAE4wJaEt3AN89AkFAtx6VFAi2AzDWRyythTiACeUX1MOCSBWnd0MmuiNgSdRR5LR1sQCfrh1uyk5QDspJSwKAUk4K2tGFAEqVFkjYEngCmWKagaAADBAACDAASAAG5AADbTW5fJQAAAAEkIAAwgAAAA//2Q==',
       animation: 'salute',
     },
   ];
